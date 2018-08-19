@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystal Collector 2.0</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    #loading, #results {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-dark">
+  <div class="container" id="game">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card card-body text-center mt-5">
+          <h1 class="heading display-5 pb-3">Crystal Guessing Game</h1>
+          <form  id="loan-form">
+
+            <div class="form-group">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Match to Win but not over</span>
+                    </div>
+                    <input type="number" class="form-control" id="target-sum" aria-label="Target Sum"  disabled>
+                  </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Your Current Crystal Sum is</span>
+                    </div>
+                    <input type="number" class="form-control" id="current-sum" aria-label="Current Sum" disabled>
+                  </div>
+            </div>
+            
+            <div class="form-group">
+              <input type="submit" value="Good Luck - Click to Reset" id="btn-start" class="btn btn-dark btn-block">
+            </div>
+
+            <div class="form-group">
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="special-messages" aria-label="messages">
+                  <div class="input-group-append">
+                      <span class="input-group-text"></span>
+                    </div>
+              </div>
+          </div>
+
+            <div class="button-row">
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-success gem" id="btn-g1" value="1"><img src="resources/img/gem1.png" width="90px" /></button>
+                  <button type="button" class="btn btn-warning gem" id="btn-g2" value="2"><img src="resources/img/gem2.png" width="90px" /></button></button>
+                  <button type="button" class="btn btn-danger gem" id="btn-g3" value="3"><img src="resources/img/gem3.png" width="90px" /></button></button>
+                  <button type="button" class="btn btn-primary gem" id="btn-g4" value="4"><img src="resources/img/gem4.png" width="90px" /></button></button>
+                </div>
+              <div class="group">
+              <div class="input-group my-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Wins</span>
+                  </div>
+                  <input type="number" class="form-control" id="wins-count" aria-label="wins" disabled>
+                  </div>
+              </div> 
+
+          <div class="group">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Losses</span>
+                  </div>
+                  <input type="number" class="form-control" id="losses-count" aria-label="losses" disabled>
+                  </div>
+              </div> 
+          
+              </div>
+            </div>
+          </form>
+          <!-- LOADER HERE -->
+          <div id="loading">
+            <img src="resources/img/loading.gif" alt="">
+          </div>
+          <!-- RESULTS -->
+          <div id="results" class="pt-4">
+            <h5>Results</h5>
+          
+          
+              <!-- <div class="form-group">
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Total Interest</span>
+                      </div>
+                      <input type="number" class="form-control" id="total-interest" aria-label="Total Interest" disabled>
+                      </div>
+                  </div> -->
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="resources/js/app3.js"></script>
+</body>
+</html>
